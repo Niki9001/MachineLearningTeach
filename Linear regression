@@ -1,0 +1,21 @@
+1. What's the difference between regression and classification?
+Generally speaking, classification is predict a small amount of number of possible outputs
+Regression is predict infinitely possible outputs.
+2. What is the training set?
+Training set is dataset used to train model.
+3. How to notation?
+We assume that x is an input variable, it is a feature to find the right formula.
+Then y is an output variable, it is a target variable, which is the model learning from
+(x,y) = single training example
+x(i),y(i) = ith training example
+4. How does a simple machine learning model work?
+training set -------> leanring algorithm ---------> f (a model)
+x (feature) ---------------> f (model) ---------------> y^
+size ----------> model -----------> price estimated
+5. How to represent f
+f(x) = wx + b
+6. How to describe the f(x) = wx + b model?
+Linear regression with one variable.
+Univariate linear regression
+7. What is the w and b?
+We call them parameters, coefficients or weights.
