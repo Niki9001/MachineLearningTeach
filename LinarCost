@@ -1,0 +1,15 @@
+1. What is a slope?
+Slope is a mathematical concept used to describe the degree of inclination of a straight line relative to the horizontal.
+In our simple linar regression example, f(x) = wx + b, w is the slope of this formula. 
+
+2. What is cost?
+In Linear Regression, "Cost" usually refers to the value of the Cost Function or Loss Function. The cost function is a measure used to evaluate the difference between the model's predicted values and the actual values. In linear regression, this measure helps us understand how well the model fits the data.
+One of the most commonly used cost functions is the Mean Squared Error (MSE), which calculates the average of the squared differences between the model's predicted values and the actual values.
+
+3. Why f(x) = wx + b cost function plot as a U shape?
+Formation of U-shaped figure:
+
+When w is far from its optimal value, the cost function value will be very high because the predicted value wxi is very different from the actual value yi.
+As w approaches the optimal value, the difference decreases and so does the value of the cost function.
+At the optimum point, the slope of the best-fit straight line, the cost function reaches a minimum.
+If w continues to increase or decrease away from the optimal point, the value of the cost function will increase again because the difference between the predicted value and the actual value increases again.
