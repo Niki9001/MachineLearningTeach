@@ -1,0 +1,17 @@
+1. What is the typical linar regression expression?
+f(x) = wx + b
+This is a standard quadratic equation of one variable. It also a linar regression, if we plot it on a Cartesian coordinate system.
+After we plot, we will find it shows that the result is a straight line.
+
+2. How linar regression works on Machine Learning?
+In f(x) = wx + b, we know that x is one parameter we input, we are looking for the most properly w and b to create a model to make our input fit our expectation.
+
+3. How to write this expression in python
+def test(x,w,b):
+    m = x.shape[0]
+    fwb = np.zeros(m)
+    for i in range(m):
+        fwb[i] = w * x[i] + b
+    return fwb
+
+In this function, x should be a numpy array.
