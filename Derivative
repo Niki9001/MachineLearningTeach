@@ -1,0 +1,14 @@
+1. What is derivative?
+Imagine you're watching a movie of a car driving along a road. A derivative is like a tool that tells you exactly how fast the car is going at any specific moment in the movie.
+Here's how it works:
+Snapshot: Think of a derivative as taking a very quick snapshot of the car's speedometer at a precise moment in time. It doesn't tell you the car's speed over the whole trip, just exactly at the moment of the snapshot.
+Slope: If you were to draw the path of the car on a graph, showing its position over time, the steepness of the path at any point is like the car's speed at that point. A flat path means the car is stopped, a gently sloping path means it's moving slowly, and a steep path means it's moving fast. The derivative tells you how steep or gentle the path is at any point.
+Change: Basically, a derivative measures how much something is changing at one specific moment. For the car, it's the speed; in other situations, it could be things like how quickly the temperature is rising or falling at a certain moment, or how fast a balloon is being blown up.
+Instantaneous: The key thing about a derivative is that it's all about what's happening in an instant - it's not an average over time, but a specific value at a specific time.
+So, in simple terms, a derivative is a way to figure out the "right now" rate of change of something.
+
+2. What is a in gradient descent function?
+Learning rate
+
+3. Why derivative important in gradient descent?
+This is a common optimization technique in machine learning. It uses derivatives to determine the direction in which the model's parameters should be adjusted to minimize the loss function. Essentially, the derivative tells the algorithm which way to "move" in order to improve the model.
