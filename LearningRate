@@ -1,0 +1,22 @@
+1. Why learning rate important?
+The learning rate is a crucial hyperparameter in machine learning, especially in training models using algorithms like gradient descent. Here's why it's so important:
+Control of Step Size in Optimization: The learning rate determines the size of the steps taken towards the minimum of the loss function during training. A larger step can speed up convergence but might overshoot the minimum, while a smaller step ensures more precise convergence but can significantly slow down the training process.
+Balance between Speed and Accuracy: A good learning rate strikes a balance between fast convergence and the accuracy of the final model. If the rate is too high, the algorithm might converge quickly but with less accuracy. If it's too low, the model might be more accurate but take much longer to train.
+Avoiding Local Minima and Plateaus: In complex models like neural networks, the loss function landscape can have many local minima and plateaus. An appropriate learning rate can help the algorithm navigate through these to find the global minimum.
+Impact on Training Dynamics: The learning rate not only affects how quickly a model learns but also the dynamics of the learning process. It can influence how well the model generalizes from training data to unseen data and can be a factor in preventing overfitting.
+Hyperparameter Tuning: Since there's no one-size-fits-all value for the learning rate, it often requires tuning. This process, typically done through experimentation or techniques like learning rate schedules or adaptive learning rates, is crucial for optimizing model performance.
+Convergence: An appropriately set learning rate ensures that the training process will converge, meaning the model's performance will stabilize at a certain point. If the learning rate is set incorrectly, convergence might not occur.
+In summary, the learning rate is a key factor in the efficiency, effectiveness, and overall success of training machine learning models. Finding the right learning rate is often one of the most important steps in designing a machine learning system.
+
+2. What problems will occur if the learning rate is too small or too large?
+Learning rate is too large:
+Convergence issues: If the learning rate is set too high, the model may "skip" the optimal solution during training because each step is too large. This may cause the model to fail to converge to the optimal state, and even if it does, it may reach a local minimum that is not good enough.
+Oscillation: Too high a learning rate may cause the model parameters to oscillate near the optimal value and fail to stabilize. This means that model performance may fluctuate during the optimization process, rather than steadily improving.
+Divergence: In extreme cases, too high a learning rate may even cause the training process to completely diverge, and the model error increases over time.
+
+Learning rate is too small:
+Slow training speed: If the learning rate is too low, the model will make very slow progress during training. This means more time and computing resources are needed to achieve the optimal state.
+Stuck in local minima: A learning rate that is too small may make the model more likely to get stuck in local minima rather than global minima. Especially in complex high-dimensional data, this may result in suboptimal model performance.
+Early stopping: Due to slow learning, it is possible to stop training before optimal performance is actually achieved, especially when time and resources are limited.
+
+
