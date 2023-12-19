@@ -1,0 +1,4 @@
+1. Mutiple linar regression is not multivariate regression
+2. Vector contains multiple components, they do not need to be sorted.
+3. We use arrow show that is a vector
+4. In machine learning linar regression, vector is a multiple demension to predict the target
