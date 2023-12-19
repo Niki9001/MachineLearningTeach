@@ -1,0 +1,7 @@
+1. There are multiple ways to write linar regression code in python, basically, we can calculate w * x one by one.
+  We also can use for loop to calculate it.
+  But the best way is use numpy.dot(x,w) to caculate. It will return the sum of w*x.
+2. NumPy is a great package for machine learning. Also it is great for vector calculate.
+3. What is normal equation?
+  The "normal equation" is a term used in linear algebra and statistics, particularly in the context of linear regression. It provides a method to find the best fitting line to a set of points in a linear regression model. This best fitting line is determined by minimizing the sum of the squared differences between the observed values and the values predicted by the line.
+4. We can also use numpy to calculate the cost function
