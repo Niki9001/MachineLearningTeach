@@ -1,0 +1,22 @@
+1. What is logisitic regression?
+  Logistic regression is a statistical method used for analyzing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a dichotomous variable (where there are only two possible outcomes).
+  It's used for binary classification tasks, like determining whether an email is spam or not, or whether a tumor is malignant or benign. Logistic regression estimates the probability that a given input point belongs to a certain class.
+  The central premise of logistic regression is the assumption that your input space can be separated into two 'regions', one for each category, by a linear (straight line) boundary. But instead of fitting a straight line to the data, logistic regression fits an "S"-shaped logistic function, known as the sigmoid function. This function can take any real-valued number and map it into a value between 0 and 1, but it does so in a way that outputs a probability distribution.  
+  In summary, logistic regression is a classification algorithm used to assign observations to a discrete set of classes. Unlike linear regression which outputs continuous number values, logistic regression transforms its output using the logistic sigmoid function to return a probability value which can then be mapped to two or more discrete classes.
+
+2. What is sigmoid function?
+  The sigmoid function, in plain language, is a special mathematical formula that turns any number into a new number between 0 and 1. The shape of this function on a graph looks like an "S."
+  Here's why it's useful: Imagine you have a light dimmer switch. When you turn the switch all the way down, the light is off (that's like the 0 in the sigmoid function). When you turn it all the way up, the light is at its brightest (that's like the 1 in the sigmoid function). The dimmer switch can smoothly adjust the light from completely off to fully on, just like the sigmoid function can take any number and translate it into a smooth range between 0 and 1.
+  This is really handy in situations where you want to describe something that's not just "on" or "off," but has a range of states in between — for instance, how confident you are that something is true, or the probability that someone will click on an ad. The sigmoid function helps turn raw scores or numbers into probabilities, which can then be used in logistic regression and other types of classification algorithms to make decisions.
+g(z) = 1 / (1 + e^-z)
+
+3. Some example of e^-z
+e ^ 0 = 1
+e ^ -2 = 1 / e^2
+e ^ 10 = e ^ 10
+e ^ -1 = 1/e
+e ^ 1 = e
+
+4. The formula of logistic regression
+z = w*x + b
+g(w * x + b) = 1 / (1 + e^-(w*x+b))
