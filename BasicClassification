@@ -1,0 +1,25 @@
+1. What is classification?
+  Classification, in plain language, is like sorting or grouping things based on their characteristics or types. Imagine you have a basket of fruit. You classify them by putting apples with apples, oranges with oranges, and bananas with bananas. In a similar way, classification in other contexts involves arranging items, ideas, or information into categories based on shared qualities or features.
+  For example, in a library, books are classified into genres like fiction, non-fiction, science, history, etc. In science, animals and plants are classified into different groups based on their characteristics. In the world of computers, classification is used to sort data, like distinguishing between emails that are spam and those that are not.
+  So, classification is essentially the process of organizing things into groups that share similar traits.
+
+2. What is binary classification?
+  Binary classification, in plain language, is like deciding if something is a "yes" or a "no." Imagine you have a big pile of socks and you're sorting them into two piles: one for clean socks and one for dirty socks. You look at each sock and decide: if it's clean, it goes in the clean pile, and if it's dirty, it goes in the dirty pile. There are only two choices, clean or dirty, and each sock must go into one of these two categories.
+  In the same way, binary classification in other areas is about making a choice between two options. For example, in a medical test, it might be used to determine if a person has a certain disease or not: yes (they have the disease) or no (they don't). In email filters, it's about classifying emails as spam or not spam.
+  So, binary classification is all about sorting or deciding things into one of two distinct groups or categories.
+
+3. What kind of question can be solved by classification algorithms?
+  Classification algorithms, which are like smart sorting methods, can solve questions where you need to put things into different groups or categories. These questions are usually about figuring out what group something belongs to based on its features. Here are some examples of questions that classification algorithms can help answer:
+    Is this email spam or not? - The algorithm looks at features of emails like the words used, the sender, and decides whether an email should be in the 'spam' group or the 'not spam' group.
+    Does this patient have a certain disease? - Based on medical tests and symptoms, the algorithm helps decide if a patient belongs in the 'has the disease' group or the 'does not have the disease' group.
+    Is this a picture of a cat or a dog? - By analyzing the characteristics of images, like shapes and colors, the algorithm can classify the picture into either the 'cat' or 'dog' category.
+    Will a customer buy this product or not? - Based on a customer’s past buying history and preferences, the algorithm can predict if the customer is likely to make a purchase ('will buy' group) or not ('won't buy' group).
+    Is this transaction fraudulent? - The algorithm looks at patterns in transaction data to classify transactions as either 'fraudulent' or 'legitimate'.
+  In each of these cases, the algorithm takes in data, analyzes it, and then makes a decision on which of the predefined categories or groups the data belongs to. It's like having an automated decision-maker that helps sort or classify things based on the information it's given.
+
+4. Why linar regression is not a good algorithem for solving classification problems?
+  Linear regression isn't ideal for solving classification problems, and here's why, explained in plain language:
+    Imagine you're trying to draw a straight line through a bunch of points on a graph to see their general direction. That's what linear regression does. It's great for understanding relationships in data where you're looking at how much or how little of something there is, like predicting the price of a house based on its size.
+    However, classification problems are like deciding whether something is in one group or another, like telling if an animal is a cat or a dog. Here, you're not measuring how much of something there is, but rather which category it belongs to.
+    The main issue with using linear regression for classification is that it's designed to predict continuous values (like temperatures, prices, or sizes), not categories (like 'spam' or 'not spam', 'cat' or 'dog'). When you use linear regression for classification, it tries to draw that straight line through your data, but what you really need is a clear boundary that separates the categories, like a fence between cats and dogs.
+  In summary, linear regression is like trying to measure how much of something there is, which doesn't work well when you need to decide which category something belongs to. That's why other algorithms, specifically designed for classification, are usually a better choice for these kinds of problems.
