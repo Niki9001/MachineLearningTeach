@@ -1,0 +1,20 @@
+1. What is decision boundary?
+  A decision boundary is like an invisible line or surface that separates different categories in a classification problem. Imagine you have a bunch of red and blue marbles scattered on the floor. A decision boundary would be the line you draw on the floor that tries to keep red marbles on one side and blue marbles on the other. In logistic regression, this line (or sometimes a more complex shape) is calculated by the model to decide which category a new data point belongs to based on where it falls relative to this line. If a new point is on the red side, the model would say it's a red marble; if it's on the blue side, it's a blue marble.
+
+2. What is polynomial decision boundary?
+  A decision boundary created by polynomial features is a technique in machine learning used for classification problems. When you have data points that belong to different categories or groups, you want a rule to help you decide which group a new data point belongs to.
+  If we use a simple straight line (a linear model) as the rule, it might work well for some situations, but in many complex scenarios, the data points can't be separated neatly by a straight line. That's where polynomial features come in.
+  Polynomial features are combinations of higher-order terms and interaction terms of the original data, like not just considering x and y, but also x^2*y^2, xy, x^3 * y^3, and so on. When you include these higher-order terms in your model, the decision boundary can curve and twist to separate data points of different categories in a more complex way. The boundary could be curved lines, circles, ellipses, or even more complex shapes.
+  In simple terms, a decision boundary with polynomial features is like a flexible rope used to separate different categories, rather than just a straight stick, allowing it to contour around groups of data with various shapes more precisely.
+
+3. How to train a logistic regression model to find a decision boundary?
+  Training a logistic regression model to find a decision boundary involves using data to figure out the best "line" (or curve, in the case of polynomial features) that separates classes from each other. Here's a simplified breakdown of the steps involved in training a logistic regression model for a decision boundary:
+    Data Preparation: Gather a dataset where each data point is labeled with its class (like "spam" or "not spam" for emails).
+    Model Construction: Set up the logistic regression model, which initially has random or zero values for its parameters (weights and bias).
+    Decision Rule: Decide on a threshold for classification, which is often 0.5 for logistic regression. This means if the model's predicted probability is greater than or equal to 0.5, it predicts one class, otherwise it predicts the other.
+    Learning: Feed the data into the model. The model calculates a prediction for each data point using its current parameters and the Sigmoid function to output probabilities.
+    Cost Function: Evaluate how well the model's predictions match the actual labels using a cost function (like cross-entropy loss), which measures the difference between predicted probabilities and actual class labels.
+    Optimization: Use an optimization algorithm, like gradient descent, to adjust the model's parameters to minimize the cost function. This process is iteratively repeated, with the parameters being refined each time.
+    Convergence: Eventually, after enough iterations, the parameters converge to values that make the cost function as small as possible. The model's decision boundary is now well-tuned and can accurately separate the classes.
+    Validation: Test the model on new, unseen data to ensure it generalizes well and the decision boundary is not just fitting the training data too closely (overfitting).
+  During training, the logistic regression model learns the decision boundary that best separates the different classes in the training data. The final decision boundary can be visualized (in two dimensions) as a line or curve that divides the different classes on a plot.
