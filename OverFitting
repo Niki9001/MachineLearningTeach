@@ -30,3 +30,27 @@
     Balancing Fit and Complexity: The key idea behind regularization is balance. You want the model to fit the data well enough to make accurate predictions but not so well that it starts memorizing the data. It's like teaching the student to understand the concepts well enough to apply them in various situations, rather than just memorizing the textbook.
     Common Techniques: There are different regularization techniques like L1 (Lasso), L2 (Ridge), and Elastic Net. Each of these applies the penalty in a slightly different way, but the goal is the same: to simplify the model in a way that improves its performance on new, unseen data.
   In summary, regularization works by making the learning process of a machine learning model more disciplined. It discourages the model from becoming overly complex and learning irrelevant details, thus helping it to generalize better to new data.
+
+6. What is regularized linar regression
+  Regularized linear regression is a type of linear regression in machine learning, but with an added twist to make it more effective. Let's break it down:
+    Linear Regression: First, think of linear regression as a simple way to predict outcomes. For example, predicting a person's weight based on their height. In linear regression, we find a line that best fits the data points we have (like plotting people's heights and weights on a graph and drawing a line through them).
+    Problem of Overfitting: Sometimes, in trying to make the line fit all the data points perfectly, it can get wiggly and overly complex, especially if some data points are unusual or errors. This is like memorizing every single bump in a road when you only need to know the general direction.
+    Regularization Comes In: To prevent this overfitting, regularized linear regression adds rules or restrictions. It's like telling the line, "You can try to fit the data points, but don't get too crazy following every little change."
+    Types of Regularization: In regularized linear regression, the most common types are:
+    L1 Regularization (Lasso): This method penalizes the line by the absolute size of the coefficients (think of coefficients as factors that determine how steep or flat the line is). It's like telling the line to be as flat as possible without missing the overall trend.
+    L2 Regularization (Ridge): This one penalizes the square of the coefficients. It's a bit more forgiving than Lasso and keeps the line smoother.
+    Elastic Net: This is a mix of L1 and L2, combining both their approaches.
+Result: By adding these regularization terms, the line (model) becomes better at predicting new, unseen data, because it's not too focused on the specific data it was trained on. It's like learning the general rules of the road, rather than memorizing every pothole.
+  So, regularized linear regression is essentially linear regression made smarter and more flexible by adding certain rules that prevent it from getting confused by the noise or peculiarities in the data.
+
+7. How to regularize linar regression?
+  Regularizing linear regression involves adding special terms to the model that help prevent overfitting, which is when a model gets too focused on the specific data it was trained on. Think of it like training a dog; you want to teach it general commands, not just how to respond in one specific location or situation. Here's how you can regularize linear regression in plain language:
+    Choose the Type of Regularization: First, decide on the type of regularization. The most common types are:
+    L1 Regularization (also known as Lasso): This is like telling the model, "You can learn from the data, but you have to stay simple. If you're not sure about something, it's better to assume it's not important."
+    L2 Regularization (also known as Ridge): This is like saying, "You can pay attention to the details, but don’t get too fixated on them. Focus more on the big picture."
+    Elastic Net: This is a mix of L1 and L2, kind of like saying, "Learn from the data, but balance your attention between the big picture and the details."
+    Add the Regularization Term to the Model: In the math of the model, you add a term that represents the chosen type of regularization. This term works like a rule or a penalty. It's like adding a rule in a game that prevents players from focusing too much on one strategy.
+    Tune the Regularization Strength: This involves deciding how strict the regularization should be. It’s like adjusting how firm you are when training a dog. If you're too lenient, the dog might not learn correctly. If you're too strict, the dog might get nervous and not perform well. In linear regression, this is done by adjusting a parameter that controls how much weight the regularization term has in the model.
+    Train the Model: Now, you train the model with your data and the regularization term. The model learns to fit the data but also follows the rules set by the regularization, which keeps it from getting too complicated.
+    Evaluate and Adjust: Finally, test your model to see how well it performs. If it's not doing well, you might need to adjust the regularization strength or even switch the type of regularization.
+  By regularizing linear regression, you're guiding the model to not only learn from the data but also to keep its learning general enough to be useful in different situations, not just the ones it was specifically trained on.
