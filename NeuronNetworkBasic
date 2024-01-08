@@ -24,3 +24,34 @@ Iteration and Improvement: This process of guessing, getting feedback, and adjus
   2000s - Deep Learning and Big Data: The 2000s witnessed the emergence of deep learning, a subset of neural networks with many layers (hence "deep") that can learn from a vast amount of data ("big data"). This era saw significant improvements in processing power and data availability, which were crucial for training deep neural networks.
   2010s and Beyond - Mainstream Adoption: The last decade has seen neural networks, especially deep learning, become mainstream in technology. They're used in everything from image and speech recognition to self-driving cars and playing complex games like Go and chess at a superhuman level.
   The history of neural networks is marked by periods of hype, disappointment, and resurgence. Today, they are at the forefront of AI research and application, driving many of the technologies we use daily.
+
+4. Basic Concept of a Neuron in Neural Networks:
+  The concept of a neuron in neural networks is inspired by biological neurons in the brain.
+  A neuron in a neural network takes one or more input values (like the price of a T-shirt) and computes an output value. This output value is known as the 'activation', a term borrowed from neuroscience.
+  In the context of T-shirt sales, a single neuron could compute the probability of a T-shirt being a top seller based on its price.
+
+5. Building a Neural Network for Demand Prediction:
+  To predict whether a T-shirt will be a top seller, multiple features are considered: price, shipping costs, marketing, and material quality.
+  Different neurons can be dedicated to estimating different aspects that influence sales, such as affordability (based on price and shipping costs), awareness (based on marketing), and perceived quality (based on price and material quality).
+
+6. Layers in Neural Networks:
+  The neurons are organized into layers. The first layer (input layer) consists of the raw features (e.g., price, shipping costs, etc.).
+  The middle layer, or 'hidden layer', processes these inputs and computes new values (activations) like affordability, awareness, and perceived quality.
+  The final layer, or 'output layer', uses the activations from the hidden layer to make the final prediction (e.g., the likelihood of a T-shirt being a top seller).
+
+7. Complex Neural Networks:
+  More complex networks can have multiple hidden layers, each with several neurons.
+  These layers can process more complex relationships and interactions between features.
+
+8. Automatic Feature Learning:
+  Unlike manual feature engineering, neural networks automatically learn the most relevant features for making predictions.
+  This self-learning of features makes neural networks powerful for tasks like demand prediction.
+
+9.Application in T-Shirt Sales:
+  In the T-shirt sales example, the network learns to predict top sellers based on learned features like affordability, awareness, and perceived quality, which it derives from the basic input features.
+
+10. Architecture of Neural Networks:
+  The architecture of a neural network, i.e., the number of layers and the number of neurons in each layer, is crucial for its performance.
+Deciding the right architecture depends on the specific application and is a key part of designing a neural network.
+
+  This summary encapsulates the essence of using neural networks in demand prediction, showcasing how they can learn from various features to make accurate predictions, a process that's highly valuable in retail and marketing strategies.
